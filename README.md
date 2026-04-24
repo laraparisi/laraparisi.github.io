@@ -22,6 +22,5 @@ Obiettivi
 - Utilizzare SCSS
 
 
-web-site-lara-parisi
 
 Autore: Lara Parisi
