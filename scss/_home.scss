@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    min-height: 80vh;
+}
+
+.hero .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+.about-text {
+    column-count: 2;
+    column-gap: 60px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.about-text p {
+    margin: 0 0 16px;
+    line-height: 1.7;
+    color: #27210A;
+    break-inside: avoid;
+}
+
+.welcome {
+    font-size: 30px;
+}
+
+.logo-lara-parisi {
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        column-count: 1;
+        column-gap: 0;
+    }
+}

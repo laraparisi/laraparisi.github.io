@@ -1,0 +1,48 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* CARD */
+.project-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* TITOLI */
+.project-card h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.description {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+/* GALLERIA */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .project-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}

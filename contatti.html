@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/img/lara-parisi-logotipo.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            <img class="hamburger-icon" src="assets/img/hamburger_icon.svg.png" alt="menu">
+        </label>
+
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="cv.html">Curriculum</a>
+            <a href="progetti.html">Projects</a>
+            <a href="contatti.html">Get in touch</a>
+        </nav>
+
+        <a href="https://www.linkedin.com/in/lara-parisi/" class="linkedin">LinkedIn</a>
+    </header>
+
+    <main class="container mt-5">
+
+        <h1 class="mb-4">Write to me</h1>
+
+        <p class="mb-5">
+            Do you have a project in mind, or do you just want to get in touch? <br>
+            Fill out the form below, and I’ll get back to you as soon as possible.
+        </p>
+
+        <form class="contact-form">
+
+            <!-- NOME + COGNOME -->
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Surname" required>
+                </div>
+            </div>
+
+            <!-- COMPANY + EMAIL -->
+            <div class="row g-3 mt-1">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Company">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+
+            <!-- RUOLO -->
+            <div class="mt-3">
+                <input type="text" class="form-control" placeholder="Role">
+            </div>
+
+            <!-- MESSAGGIO -->
+            <div class="mt-3">
+                <textarea class="form-control" placeholder="Write your message..." rows="5"></textarea>
+            </div>
+
+            <!-- CHECKBOX -->
+            <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox" id="privacy">
+                <label class="form-check-label" for="privacy">
+                    I accept the privacy policy
+                </label>
+            </div>
+
+            <!-- BOTTONE -->
+            <button type="submit" class="btn btn-dark mt-4">Invia</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
