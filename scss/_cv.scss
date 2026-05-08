@@ -1,0 +1,82 @@
+@use "variables" as v;
+
+.cv__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+}
+
+.cv__block {
+  margin-bottom: 60px;
+}
+
+.cv__list,
+.cv__skills-list,
+.cv__tags {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv__item {
+  margin-bottom: 15px;
+}
+
+.cv__item strong {
+  display: block;
+  font-weight: 600;
+}
+
+.cv__item span {
+  font-size: 14px;
+  color: v.$color-muted;
+}
+
+.cv__skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cv__dots {
+  display: flex;
+  gap: 5px;
+}
+
+.cv__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: v.$color-text;
+  opacity: 0.2;
+}
+
+.cv__dot--active {
+  opacity: 1;
+}
+
+.cv__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cv__tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid v.$color-border;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.cv__soft-skills {
+  padding-left: 18px;
+  color: v.$color-text;
+}
+
+/* MOBILE */
+@media (max-width: v.$mobile) {
+  .cv__grid {
+    grid-template-columns: 1fr;
+  }
+}

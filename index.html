@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lara Parisi | Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio personale di Lara Parisi, UX/UI designer con esperienza in project management, comunicazione e design digitale.">
+
+    <meta property="og:title" content="Lara Parisi | Portfolio">
+    <meta property="og:description"
+        content="Portfolio personale di Lara Parisi, UX/UI designer con esperienza in project management, comunicazione e design digitale.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/lara-parisi.webp">
+    <meta property="og:url" content="index.html">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="theme-color" content="#f8f8f8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <header class="navbar">
+        <input type="checkbox" id="menu-toggle" class="navbar__toggle">
+
+        <label for="menu-toggle" class="navbar__hamburger">
+            <img class="navbar__hamburger-icon" src="assets/img/hamburger_icon.svg" alt="Apri menu">
+        </label>
+
+        <nav class="navbar__nav" aria-label="Navigazione principale">
+            <ul class="navbar__list" id="menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="cv.html" class="navbar__link">Curriculum</a></li>
+                <li class="navbar__item"><a href="progetti.html" class="navbar__link">Projects</a></li>
+                <li class="navbar__item"><a href="contatti.html" class="navbar__link">Get in touch</a></li>
+            </ul>
+        </nav>
+
+        <a href="https://www.linkedin.com/in/lara-parisi/" class="navbar__linkedin" target="_blank"
+            rel="noopener noreferrer nofollow">
+            LinkedIn
+        </a>
+    </header>
+
+    <main>
+
+        <section class="container hero" aria-labelledby="hero-title">
+            <div class="hero__text">
+                <img class="hero__logo" src="assets/img/lara-parisi-logotipo.svg" alt="Logo Lara Parisi"
+                    fetchpriority="high">
+                <h1 id="hero-title">Hi, I'm Lara Parisi</h1>
+                <p class="hero__welcome">Welcome to my portfolio.</p>
+            </div>
+
+            <div class="hero__image">
+                <img src="assets/img/lara-parisi.jpg" alt="Ritratto professionale di Lara Parisi" fetchpriority="high">
+            </div>
+        </section>
+
+        <section class="container about" aria-labelledby="about-title">
+            <h2 id="about-title">About me</h2>
+
+            <div class="about__text">
+                <p><strong>Creativity has always been a part of who I am.</strong></p>
+
+                <p>I started dancing at the age of four, and I’ve never stopped since. Movement, expression, and art
+                    have become a constant thread throughout my life. Over time, dance has become a fundamental part of
+                    who I am, shaping me through discipline, consistency, and passion. It has taught me dedication,
+                    perseverance, and the power of expressing myself beyond words.</p>
+
+                <p>While dance has been my first language of expression, I gradually felt the need to explore new ways
+                    to channel my creativity and structure it within a more strategic and professional context.</p>
+
+                <p>For the past three years, I’ve been working as a Project Manager and Account in a company just
+                    outside Milan. This role has allowed me to develop an organized and strategic mindset, while also
+                    collaborating daily with development and design teams. <br>
+                    It was precisely this experience that sparked my desire to dive deeper into the digital world and
+                    web-based creativity, an area where I can combine aesthetic sensibility with a strong project
+                    vision.</p>
+
+                <p>Outside of work, I love life’s simple pleasures: the sea, the sun, music, and traveling. <br>
+                    My favorite dish? Well, pasta, in all its shapes and forms.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav" aria-label="Link social">
+            <ul class="footer__list">
+                <li><a href="https://www.linkedin.com/in/lara-parisi/" target="_blank"
+                        rel="noopener noreferrer nofollow">LinkedIn</a></li>
+                <li><a href="https://github.com/laraparisi/laraparisi.github.io" target="_blank"
+                        rel="noopener noreferrer nofollow">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

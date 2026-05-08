@@ -1,0 +1,71 @@
+@use "variables" as v;
+
+.contact-page {
+  padding-bottom: 100px;
+}
+
+.contact-section {
+  max-width: 800px;
+}
+
+.contact-section__intro {
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form .form-control {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: v.$border-radius;
+  border: 1px solid v.$color-border;
+  box-shadow: none;
+}
+
+.contact-form .form-control:focus {
+  border-color: v.$color-text;
+  box-shadow: none;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  width: fit-content;
+  padding: 12px 26px;
+  border-radius: v.$border-radius;
+  transition: v.$transition-default;
+}
+
+.contact-form .btn:hover {
+  opacity: 0.9;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* MOBILE */
+@media (max-width: v.$mobile) {
+  .contact-section__intro br {
+    display: none;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}

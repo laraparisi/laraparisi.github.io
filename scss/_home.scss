@@ -1,0 +1,70 @@
+@use "variables" as v;
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 80vh;
+}
+
+.hero__text {
+  flex: 1;
+}
+
+.hero__logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.hero__welcome {
+  font-size: 30px;
+}
+
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image img {
+  max-width: 400px;
+  border-radius: v.$border-radius-lg;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+
+.about__text {
+  column-count: 2;
+  column-gap: 60px;
+  margin-top: 20px;
+}
+
+.about__text p {
+  margin-bottom: 16px;
+  break-inside: avoid;
+}
+
+/* MOBILE */
+@media (max-width: v.$mobile) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    padding-top: 20px;
+  }
+
+  .hero__welcome {
+    font-size: 24px;
+  }
+
+  .hero__logo {
+    margin: 0 auto 20px;
+  }
+
+  .about__text {
+    column-count: 1;
+  }
+}

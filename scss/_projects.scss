@@ -1,0 +1,61 @@
+@use "variables" as v;
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.project-card {
+  padding: 40px;
+  background-color: v.$color-white;
+  border-radius: v.$border-radius-lg;
+  box-shadow: v.$shadow-soft;
+}
+
+.project-card__header {
+  margin-bottom: 20px;
+}
+
+.project-card__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: v.$color-muted;
+}
+
+.project-card__content {
+  max-width: 750px;
+  margin-bottom: 30px;
+}
+
+.project-card__description {
+  margin-bottom: 16px;
+}
+
+.project-card__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.project-card__gallery img {
+  width: 100%;
+  border-radius: v.$border-radius;
+  object-fit: cover;
+  transition: v.$transition-default;
+}
+
+.project-card__gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* MOBILE */
+@media (max-width: v.$mobile) {
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-card__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
